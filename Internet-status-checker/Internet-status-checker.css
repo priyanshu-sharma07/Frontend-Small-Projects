@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url(../internet-status-checker/image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(223, 205, 222);
+    max-width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;  
+    transition: transform 0.4s ease, box-shadow 0.3s ease;    
+}
+.container:hover{
+box-shadow: 0 15px 40px rgb(159, 130, 241);
+transform: scale(1.02);
+background-color: rgb(192, 161, 198);
+}
+.container h1{
+    color: #84011e;
+    text-align: center;
+    margin-bottom: 20px;
+}
