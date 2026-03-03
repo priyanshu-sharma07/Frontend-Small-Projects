@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+}
+.container {
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: rgb(45, 42, 42);
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.container h1 {
+  background-color: #0051ff;
+  color: #cce5ff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container input {
+  padding: 10px;
+  margin: 10px;
+  background-color: #e0ddf1;
+  color: #111213;
+  max-width: 90%;
+}
+.container button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #22c55e;
+  color: #ffffff;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+.container button:hover {
+  background-color: #16a34a;
+  cursor: pointer;
+}
+.container input[type="text"] {
+  font-size: medium;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#result {
+  color: #e0ddf1;
+  font-size: large;
+  font-weight: bold;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
